@@ -3,14 +3,23 @@ import java.util.Scanner;
 
 // creating class to calculate area of circle
 class AreaofCircle{
-// SPecifying privae data members 
+    
+	// Specifying privae data members 
 	private double radius; 
-// Creating constructor with required parameters
+    
+	// Creating constructor with required parameters
 	public AreaofCircle(double radius){
 	this.radius = radius; 
 	}
-	public void displayarea(){
-	System.out.print("area of the circle is : "+ 3.14*radius*radius); 
+	
+	// Display circumference of a circle
+	public void displayCircumference(double radius) {
+		System.out.println("Circumference of a circle : " + 2 * 3.14 * radius);
+	}
+	
+	// Display area of a circle
+	public void displayArea(){
+	    System.out.print("area of the circle is : "+ 3.14*radius*radius); 
 	}
 }
 public class CircleArea{
@@ -19,9 +28,11 @@ public class CircleArea{
 		System.out.print("enter radius :" ); 
 		double radius = input.nextDouble(); 
 
-		AreaofCircle area = new AreaofCircle(radius); 
+		AreaofCircle circle = new AreaofCircle(radius); 
 
-		area.displayarea(); 
+		circle.displayarea(); 
+		circle.displayCircumference();
+		
 
 		input.close(); 
 	}

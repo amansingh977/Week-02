@@ -1,4 +1,4 @@
-// Importing Scanner class from util package 
+// Importing Scanner class
 import java.util.Scanner; 
 
 // creating class Employee 
